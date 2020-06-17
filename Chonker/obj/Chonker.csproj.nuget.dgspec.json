@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phili\\source\\repos\\Chonker\\Chonker\\Chonker.csproj": {}
+    "C:\\Users\\phili\\source\\Repo-C-39\\Chonker\\Chonker\\Chonker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phili\\source\\repos\\Chonker\\Chonker\\Chonker.csproj": {
+    "C:\\Users\\phili\\source\\Repo-C-39\\Chonker\\Chonker\\Chonker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phili\\source\\repos\\Chonker\\Chonker\\Chonker.csproj",
+        "projectUniqueName": "C:\\Users\\phili\\source\\Repo-C-39\\Chonker\\Chonker\\Chonker.csproj",
         "projectName": "Chonker",
-        "projectPath": "C:\\Users\\phili\\source\\repos\\Chonker\\Chonker\\Chonker.csproj",
+        "projectPath": "C:\\Users\\phili\\source\\Repo-C-39\\Chonker\\Chonker\\Chonker.csproj",
         "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phili\\source\\repos\\Chonker\\Chonker\\obj\\",
+        "outputPath": "C:\\Users\\phili\\source\\Repo-C-39\\Chonker\\Chonker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[1.1.3, )"
