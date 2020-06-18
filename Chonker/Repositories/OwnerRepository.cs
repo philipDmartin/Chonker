@@ -37,6 +37,7 @@ namespace Chonker.Repositories
                     SqlDataReader reader = cmd.ExecuteReader();
 
                     List<Owner> owners = new List<Owner>();
+                    List<Dog> dogs = new List<Dog>();
                     while (reader.Read())
                     {
                         Owner owner = new Owner
