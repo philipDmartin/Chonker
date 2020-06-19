@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Chonker.Models;
 using Chonker.Repositories;
@@ -24,12 +25,32 @@ namespace Chonker.Controllers
             _ownerRepo = new OwnerRepository(config);
         }
 
-        // GET: Walkers
+        private int GetCurrentUserId()
+        {
+            string id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return int.Parse(id);
+        }
+
+        //GET: Walkers
         public ActionResult Index()
         {
-            List<Walker> walkers = _walkerRepo.GetAllWalkers();
-
-            return View(walkers);
+            try
+            {
+                int currentOwnerId = GetCurrentUserId();
+                Owner currentOwner = _ownerRepo.GetOwnerById(currentOwnerId);
+                int currentNeighborhoodId = currentOwner.NeighborhoodId;
+                List<Walker> walkers = _walkerRepo.GetWalkersInNeighborhood(currentNeighborhoodId);
+                if (currentNeighborhoodId != currentOwner.NeighborhoodId)
+                {
+                    return NotFound();
+                }
+                return View(walkers);
+            }
+            catch
+            {
+                List<Walker> allWalkers = _walkerRepo.GetAllWalkers();
+                return View(allWalkers);
+            }
         }
 
         // GET: Walkers/Details/5

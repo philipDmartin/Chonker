@@ -549,3 +549,4 @@ C:\Users\phili\source\Repo-C-39\Chonker\Chonker\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\phili\source\Repo-C-39\Chonker\Chonker\obj\Debug\netcoreapp3.1\Razor\Views\Dogs\Edit.cshtml.g.cs
 C:\Users\phili\source\Repo-C-39\Chonker\Chonker\obj\Debug\netcoreapp3.1\Razor\Views\Dogs\Index.cshtml.g.cs
 C:\Users\phili\source\Repo-C-39\Chonker\Chonker\obj\Debug\netcoreapp3.1\Razor\Views\Dogs\Details.cshtml.g.cs
+C:\Users\phili\source\Repo-C-39\Chonker\Chonker\obj\Debug\netcoreapp3.1\Razor\Views\Owner\Login.cshtml.g.cs

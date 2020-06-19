@@ -70,7 +70,7 @@ namespace Chonker.Repositories
                 FROM Walker
                 WHERE NeighborhoodId = @neighborhoodId
             ";
-
+                
                     cmd.Parameters.AddWithValue("@neighborhoodId", neighborhoodId);
 
                     SqlDataReader reader = cmd.ExecuteReader();
